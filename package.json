@@ -5,7 +5,11 @@
   "dependencies": {
     "express": "2.5.8",
     "jade": ">= 0.0.1",
+    "mongoose": "^4.1.7",
     "oauth": "^0.9.13",
+    "passport": "^0.3.0",
+    "passport-facebook": "^2.0.0",
+    "passport-twitter": "^1.0.3",
     "twitter": "^1.2.5"
   }
 }

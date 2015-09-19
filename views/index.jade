@@ -1,25 +1,15 @@
-h1= title
-p Welcome to #{title}
-  div.top
-    form.form-horizontal(method="post", id="loginForm")
-      label Username
-      input.span3(id="username", type="text", name="User", placeholder="Enter your username")
-      label Password
-      input.span3(id="password", type="password", name="Password")
-      input.btn(type="submit", value="Log In")
-  div.container
-    div.content
-      table.table.table-striped
-        thead
-          tr
-            th Table
-            th Heading
-        tbody
-          tr
-            td Blah
-            td Test
-          tr
-            td Hello
-            td World
- 
-  div.footer
+  h1= title
+  p Welcome to #{title}
+  if(user)
+    ul
+      li
+        img(src="#{user.photo}")
+      li Bienvenido #{user.name}
+      li
+        a(href='logout') Salir
+  else
+    ul
+      li
+        a(href='auth/twitter') Login con Twitter
+      li
+        a(href='auth/facebook') Login con Facebook
