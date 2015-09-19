@@ -10,10 +10,10 @@ var app = module.exports = express.createServer();
 
 var Twitter = require('twitter');
 var client = new Twitter({
-    consumerKey: 'xaYsAVUzFp6vLXp3JHN2SeEVP',
-    consumerSecret: 'VKhVcNYPLgCdxErnFQRtw8TnI3qEtdWgIXLtUuY6syYvMSG6Ft',
-    access_token_key: '374141615-HlfD1AyeTqsNN2tNKZ2hMwz7e1c8uWmDn4duTNLq',
-    access_token_secret: '4iWdRL5RFcSvNbH4h6LOw8M3PrWbYwNYcrWoFPzbhDQuL'
+    consumerKey: 'ouy8sE5HZvOHuBVBOZAN0WgJY',
+    consumerSecret: 'Y9AXQdYTWw6rnLYmPvMwNrFDADGC80g2z6aLZ3SCaK2HuZG8zj',
+    access_token_key: '374141615-2xSdReXe9GlsjNl8jlbUA9cfbhpTAMtwP8PRVwtC',
+    access_token_secret: 'CK6MawyTAKBU94ZCB27iBrx4TitMcxtPjbpGCdjxBzqW2'
 });
 
 var params = {screen_name: 'nodejs'};
