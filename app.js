@@ -15,14 +15,7 @@ require('./models/user');
 require('./passport')(passport);
 
 
-var Twitter = require('twitter');
-var client = new Twitter({
-    consumerKey: 'ouy8sE5HZvOHuBVBOZAN0WgJY',
-    consumerSecret: 'Y9AXQdYTWw6rnLYmPvMwNrFDADGC80g2z6aLZ3SCaK2HuZG8zj',
-    access_token_key: '374141615-2xSdReXe9GlsjNl8jlbUA9cfbhpTAMtwP8PRVwtC',
-    access_token_secret: 'CK6MawyTAKBU94ZCB27iBrx4TitMcxtPjbpGCdjxBzqW2'
-});
-client.get('https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=twitterapi&count=2',{include_entities:false});
+
 // Conexión a la base de datos de MongoDB que tenemos en local
 mongoose.connect('mongodb://localhost:27017/passport-example', function(err, res) {
   if(err) throw err;
